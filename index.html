@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>XPath practice Page Amplitudo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+<style>
+    html {
+        color: white;
+        font-family: Poppins, sans-serif;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #01243f;
+    }
+
+    #wrapper {
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #divLogin {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+    }
+
+    .textInputContainer {
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textInputContainer input {
+        height: 30px;
+        border-radius: 5px;
+        border: 2px solid white;
+        background-color: #01243f;
+        color: white;
+    }
+
+    #divLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #divLogo img {
+        width: 100%;
+    }
+
+    #btnLogin {
+        border: 1px solid #00b9ad;
+        background-color: #00b9ad;
+        color: #fff;
+        border-radius: 5px;
+        width: 100px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    #logInPanelHeading {
+        color: #00b9ad;
+        font-size: 25px;
+    }
+
+</style>
+<div id="wrapper">
+    <div id="content">
+        <div id="divLogin">
+            <div id="divLogo">
+                <img src="https://amplitudo.me/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fpublic%2Fimages%2Fnavbar%2FLogoWhite.a33952bbda4729a14aa65c2a82649ccc.svg&w=256&q=75" alt="logo">
+            </div>
+            <form action="#" method="post" id="frmLogin">
+                <div id="logInPanelHeading">XPath Practice</div>
+                <div id="divUsername" class="textInputContainer">
+                    <span class="form-hint">Username</span>
+                    <input type="text" id="txtUsername" type="text" name="txtUsername">
+                </div>
+                <div id="divPassword" class="textInputContainer">
+                    <span class="form-hint">Password</span>
+                    <input type="password" id="txtPassword" type="text" name="txtPassword">
+                </div>
+                <div id="divLoginHelpLink"></div>
+                <div id="divLoginButton">
+                    <input type="submit" name="Submit" class="button" value="LOGIN" id="btnLogin">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
